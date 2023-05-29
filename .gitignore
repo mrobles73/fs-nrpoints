@@ -1,0 +1,4 @@
+/jars/**.jar
+/jars
+
+*.xcf

@@ -1,0 +1,102 @@
+$btn-border-radius:         0px;
+$btn-border-radius-sm:      0px;
+$btn-border-radius-lg:      0px;
+$pagination-border-radius:  0px;
+$pagination-border-radius-sm: 0px;
+
+
+$primary: #007ac2;
+$pagination-bg: transparent;
+$pagination-disabled-bg:            #e9ecef;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height:100%;
+}
+
+body {
+    position: relative;
+    min-height:100%;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: 0px;
+}
+
+.table {
+    margin-bottom:0;
+}
+
+.pt-nav {
+    padding-top:90px;
+}
+
+.pb-footer {
+    padding-bottom:55px;
+}
+
+.mb-footer {
+    margin-bottom: 55px;
+}
+
+.alert-fixed {
+    position:fixed; 
+    top: 4rem; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    z-index:9999; 
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") !important;
+}
+
+.form-control.is-invalid:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.cust-input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-gray-300); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-gray-500); 
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-gray-600); 
+}
+
+.dropdown-menu-left {
+    transform: translateX(0);
+}
+
+@include media-breakpoint-up(md) {
+    .dropdown-menu-left {
+        transform: translateX(-75%);
+    }
+}
